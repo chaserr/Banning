@@ -1,0 +1,68 @@
+//
+//  PrefixHeader.pch
+//  Banning
+//
+//  Created by lanou3g on 15/8/5.
+//  Copyright (c) 2015年 朝夕. All rights reserved.
+//
+
+#ifndef Banning_PrefixHeader_pch
+#define Banning_PrefixHeader_pch
+#ifdef __OBJC__
+
+/*****************日志设置 Log *********************************/
+
+#define __DEBUG_LOG_ENABLED__ 1
+
+#if __DEBUG_LOG_ENABLED__
+//调试状态
+#define NSLog(s, ...) NSLog(@"DEBUG %s(%d): %@", __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+
+#else
+//发布状态
+#define NSLog(s, ...)
+
+#endif
+
+
+
+//-------------------获取设备大小-------------------------
+//NavBar高度
+#define NavigationBar_HEIGHT 44
+//获取屏幕 宽度、高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
+//读取本地图片
+#define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:file ofType:ext]]
+
+//定义UIImage对象
+#define IMAGE(A) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:A ofType:nil]]
+
+#define ImageNamed(_pointer) [UIImage imageNamed:[UIUtil imageName:_pointer]]
+
+//带有RGBA的颜色设置
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+
+//G－C－D
+#define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+#define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
+
+// 字体
+#define Thonburi [UIFont fontWithName:@"Thonburi" size:14]
+#define TrebuchetMS [UIFont fontWithName:@"TrebuchetMS" size:14]
+#define HiraKakuProN_W3 [UIFont fontWithName:@"HiraKakuProN-W3" size:14]
+#define HelveticaNeue [UIFont fontWithName:@"HelveticaNeue" size:14]
+#define STHeitiJ_Medium [UIFont fontWithName:@"STHeitiJ-Medium" size:14]
+#define GeezaPro [UIFont fontWithName:@"GeezaPro" size:13]
+
+// RGB颜色
+#define TXColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+
+#import "Header.h"
+
+#endif
+#endif

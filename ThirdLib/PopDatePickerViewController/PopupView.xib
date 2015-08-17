@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupView">
+            <connections>
+                <outlet property="datePicker" destination="0uH-j7-gvi" id="urK-F4-TFM"/>
+                <outlet property="innerView" destination="iN0-l3-epB" id="gPN-0b-G9Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0uH-j7-gvi">
+                    <rect key="frame" x="0.0" y="35" width="280" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="460862898.14652801">
+                        <!--2015-08-10 01:28:18 +0000-->
+                    </date>
+                </datePicker>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒时间:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7E-nb-5z0">
+                    <rect key="frame" x="8" y="3" width="254" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CyF-j6-Ruv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFT-nW-PEd">
+                    <rect key="frame" x="88" y="189" width="105" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="kK6-iO-AZQ"/>
+                        <constraint firstAttribute="width" constant="105" id="wP9-uC-wSb"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissViewSlideAction:" destination="-1" eventType="touchUpInside" id="CV6-gT-UNI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90588235289999997" green="0.76938781290000002" blue="0.88239521409999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dFT-nW-PEd" firstAttribute="top" secondItem="B7E-nb-5z0" secondAttribute="bottom" constant="156" id="1cM-ZA-3AO"/>
+                <constraint firstItem="0uH-j7-gvi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8vS-64-QAk"/>
+                <constraint firstItem="B7E-nb-5z0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="AdX-5H-xt4"/>
+                <constraint firstAttribute="centerX" secondItem="dFT-nW-PEd" secondAttribute="centerX" id="AfO-Qh-eAu"/>
+                <constraint firstAttribute="trailing" secondItem="B7E-nb-5z0" secondAttribute="trailing" constant="18" id="Fzk-YQ-Jgz"/>
+                <constraint firstItem="B7E-nb-5z0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="GVZ-OK-cJ6"/>
+                <constraint firstItem="0uH-j7-gvi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="Nb9-Dh-lJq"/>
+                <constraint firstItem="0uH-j7-gvi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="hmT-dw-xxf"/>
+                <constraint firstAttribute="trailing" secondItem="0uH-j7-gvi" secondAttribute="trailing" id="kAT-fF-ECa"/>
+                <constraint firstItem="0uH-j7-gvi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="prH-fD-Heg"/>
+                <constraint firstItem="0uH-j7-gvi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="q3f-SY-cuG"/>
+                <constraint firstAttribute="bottom" secondItem="0uH-j7-gvi" secondAttribute="bottom" constant="46" id="zxZ-lu-6xO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hmT-dw-xxf"/>
+                    <exclude reference="prH-fD-Heg"/>
+                    <exclude reference="q3f-SY-cuG"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="255" y="99.5"/>
+        </view>
+    </objects>
+</document>

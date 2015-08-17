@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V2E-g8-B5g">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--附近NAV-->
+        <scene sceneID="Izm-1p-GD7">
+            <objects>
+                <navigationController id="V2E-g8-B5g" userLabel="附近NAV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="附近" id="b1Y-i2-79b"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ykC-ZC-ah6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.99357401489999997" green="0.9251030307" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99357401489999997" green="0.9251030307" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WJw-SN-U04" kind="relationship" relationship="rootViewController" id="k4G-27-2K6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rrn-VP-mWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="372"/>
+        </scene>
+        <!--附近-->
+        <scene sceneID="fHK-Um-W65">
+            <objects>
+                <viewController storyboardIdentifier="Map" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WJw-SN-U04" customClass="TXMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="10j-31-r4n"/>
+                        <viewControllerLayoutGuide type="bottom" id="89N-nu-mul"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9NK-zp-0Eh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fQb-iN-8zM">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fQb-iN-8zM" firstAttribute="top" secondItem="10j-31-r4n" secondAttribute="bottom" id="6Mr-cb-L6T"/>
+                            <constraint firstItem="fQb-iN-8zM" firstAttribute="leading" secondItem="9NK-zp-0Eh" secondAttribute="leading" id="6mF-Ss-82X"/>
+                            <constraint firstAttribute="bottom" secondItem="fQb-iN-8zM" secondAttribute="bottom" id="C7p-GV-Olq"/>
+                            <constraint firstAttribute="trailing" secondItem="fQb-iN-8zM" secondAttribute="trailing" id="zbL-Tc-ZNo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="附近" id="SsM-mI-o0S"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="customMapView" destination="fQb-iN-8zM" id="rVC-CX-8tf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMf-CO-Hd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376" y="372"/>
+        </scene>
+    </scenes>
+</document>

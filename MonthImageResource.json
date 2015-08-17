@@ -1,0 +1,102 @@
+{
+    "weather": [
+                {
+                "weatherImageName": "tq1"
+                },
+                {
+                "weatherImageName": "tq2"
+                },
+                {
+                "weatherImageName": "tq3"
+                },
+                {
+                "weatherImageName": "tq4"
+                },
+                {
+                "weatherImageName": "tq5"
+                },
+                {
+                "weatherImageName": "tq6"
+                },
+                {
+                "weatherImageName": "tq7"
+                },
+                {
+                "weatherImageName": "tq8"
+                },
+                {
+                "weatherImageName": "tq9"
+                },
+                {
+                "weatherImageName": "tq10"
+                },
+                {
+                "weatherImageName": "tq11"
+                },
+                {
+                "weatherImageName": "tq12"
+                },
+                {
+                "weatherImageName": "tq13"
+                },
+                {
+                "weatherImageName": "tq14"
+                },
+                {
+                "weatherImageName": "tq15"
+                },
+                {
+                "weatherImageName": "tq16"
+                }
+                ],
+    "mood": [
+             {
+             "moodImageName": "bq1"
+             },
+             {
+             "moodImageName": "bq2"
+             },
+             {
+             "moodImageName": "bq3"
+             },
+             {
+             "moodImageName": "bq4"
+             },
+             {
+             "moodImageName": "bq5"
+             },
+             {
+             "moodImageName": "bq6"
+             },
+             {
+             "moodImageName": "bq7"
+             },
+             {
+             "moodImageName": "bq8"
+             },
+             {
+             "moodImageName": "bq9"
+             },
+             {
+             "moodImageName": "bq10"
+             },
+             {
+             "moodImageName": "bq11"
+             },
+             {
+             "moodImageName": "bq12"
+             },
+             {
+             "moodImageName": "bq13"
+             },
+             {
+             "moodImageName": "bq14"
+             },
+             {
+             "moodImageName": "bq15"
+             },
+             {
+             "moodImageName": "bq16"
+             }
+             ]
+}

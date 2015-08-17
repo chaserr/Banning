@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TXTableViewHeader">
+            <connections>
+                <outlet property="headerView" destination="mSR-OR-QhN" id="uoe-4h-kBR"/>
+                <outlet property="headerView_headimage" destination="LCI-FR-Amv" id="V2H-dQ-Ac9"/>
+                <outlet property="headerView_timelabel" destination="7rD-8p-7Ig" id="ePV-0p-eNt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mSR-OR-QhN">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sn5-n9-jp5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover_default.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LCI-FR-Amv" userLabel="headImage">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      2015年8月5号  星期三" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rD-8p-7Ig">
+                            <rect key="frame" x="10" y="140" width="365" height="20"/>
+                            <color key="backgroundColor" red="0.95484857759999997" green="0.8648194736" blue="0.93432208569999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95484857759999997" green="0.8648194736" blue="0.93432208569999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7rD-8p-7Ig" secondAttribute="trailing" id="2YF-kt-Lpv"/>
+                        <constraint firstItem="7rD-8p-7Ig" firstAttribute="top" secondItem="LCI-FR-Amv" secondAttribute="bottom" id="8B2-ZH-ABf"/>
+                        <constraint firstItem="LCI-FR-Amv" firstAttribute="leading" secondItem="sn5-n9-jp5" secondAttribute="leading" id="8mS-Qn-6GN"/>
+                        <constraint firstAttribute="bottom" secondItem="LCI-FR-Amv" secondAttribute="bottom" constant="20" id="GcJ-Ea-lhK"/>
+                        <constraint firstAttribute="trailing" secondItem="LCI-FR-Amv" secondAttribute="trailing" id="H6S-9h-08V"/>
+                        <constraint firstItem="7rD-8p-7Ig" firstAttribute="leading" secondItem="sn5-n9-jp5" secondAttribute="leading" constant="10" id="H7g-lj-4UV"/>
+                        <constraint firstAttribute="bottom" secondItem="7rD-8p-7Ig" secondAttribute="bottom" id="lKc-gd-zXv"/>
+                        <constraint firstItem="LCI-FR-Amv" firstAttribute="top" secondItem="sn5-n9-jp5" secondAttribute="top" id="zbe-45-NPd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sn5-n9-jp5" firstAttribute="top" secondItem="mSR-OR-QhN" secondAttribute="top" id="1Vn-iw-HXC"/>
+                <constraint firstAttribute="trailing" secondItem="sn5-n9-jp5" secondAttribute="trailing" id="81X-u0-7Na"/>
+                <constraint firstItem="sn5-n9-jp5" firstAttribute="leading" secondItem="mSR-OR-QhN" secondAttribute="leading" id="CUM-kM-Lgm"/>
+                <constraint firstAttribute="bottom" secondItem="sn5-n9-jp5" secondAttribute="bottom" id="OLA-dy-hU0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="525.5" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cover_default.jpg" width="540" height="216"/>
+    </resources>
+</document>
